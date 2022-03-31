@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Connections</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/connections.css">
+
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <header>
+        <div class =" title-box">
+            <h1 class ="text-4xl font-semibold text-center  ">
+                Connection 
+            </h1>
+            <p>entrer votre identifiant et mots de passe ici</p>
+
+        </div>
+        <div> 
+            <Label class='text-lg font-medium mb-3'>
+             identifiant
+            </Label>
+            <input class="p-2 bg-gray-200 rounded-sm text-gray-900 outline-none block w-full" type="email" name="email" id="id_email" placeholder="Your Email">
+        </div>
+        <div class='my-3'> 
+            <Label class='text-lg font-medium mb-3'>
+                Mots de passe
+            </Label>
+            <input class="p-2 bg-gray-200 rounded-sm text-gray-900 outline-none block w-full" type="password" name="password1" id="id_password1" placeholder="Password">
+        </div>
+    </div>
+
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+
+    <div class="flex justify-center items-center">
+        <button class="py-2 px-4 bg-primary_red text-gray-100 font-medium text-lg rounded-md">
+            Log In
+        </button>
+    </div>
+    <div class="text-center my-4">
+        <p>
+            Do not have account <a href="INSCRIPTIONS.html" class="text-blue-600"> Sign Up</a>
+        </p>
+    </div>
+
+    </header>
+    
+</body>
+</html>

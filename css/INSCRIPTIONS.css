@@ -1,0 +1,39 @@
+* {
+    margin: 0; /*définit des valeurs pour l'épaisseur de la zone de marge*/
+    padding: 0;/*définit des valeurs pour l'épaisseur de la zone de remplissage*/
+}
+
+html {
+    scroll-behavior: smooth; /*Spécifie le comportement de défilement d'une zone de défilement, lorsque le défilement se produit en raison de la navigation ou des API de défilement CSSOM. */
+    /*CSSOM est un module de la spécification CSS qui définit comment manipuler la vue d'un document et notamment le comportement lors du défilement*/ /*Une API est un ensemble de définitions et de protocoles qui facilite la création et l'intégration de logiciels d'applications*/
+}
+
+body {
+    max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+    
+    
+    text-align: center;
+    background-color: #000000;/*Définit la couleur d'arrière-plan d'un élément*/
+}
+
+header {
+  
+    background-color: white;
+   
+    z-index: 999;/*spécifie le niveau de pile de la boîte dans le contexte d'empilement actuel et si la boîte établit un contexte d'empilement local*/
+    padding: 40px;/*définit des valeurs pour l'épaisseur de la zone de remplissage*/
+    top: 100px;/* Spécifie dans quelle mesure le bord de la marge supérieure d'une boîte en position absolue est décalée sous le bord supérieur du « bloc contenant » de la boîte*/
+    box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, .2); /*Attache une ou plusieurs ombres portées à la boîte. La propriété est une liste d'ombres séparées par des virgules, chacune spécifiée par 2 à 4 valeurs de longueur*/
+}
+
+
+label{
+    background-color: white;
+}
+
+
+p{
+    background-color:white;
+}

@@ -1,0 +1,239 @@
+
+* {
+    margin: 0; /*définit des valeurs pour l'épaisseur de la zone de marge*/
+    padding: 0;/*définit des valeurs pour l'épaisseur de la zone de remplissage*/
+}
+
+html {
+    scroll-behavior: smooth; /*Spécifie le comportement de défilement d'une zone de défilement, lorsque le défilement se produit en raison de la navigation ou des API de défilement CSSOM. */
+    /*CSSOM est un module de la spécification CSS qui définit comment manipuler la vue d'un document et notamment le comportement lors du défilement*/ /*Une API est un ensemble de définitions et de protocoles qui facilite la création et l'intégration de logiciels d'applications*/
+}
+
+body {
+    background-color: #000000;/*Définit la couleur d'arrière-plan d'un élément*/
+}
+
+header {
+    display: flex;
+    flex-direction: column;/*Spécifie comment les éléments flexibles sont placés dans le conteneur flexible*/
+    justify-content: center;/* indique la façon dont l'espace doit être réparti entre et autour des éléments selon l'axe principal d'un conteneur flexible*/
+    align-items: center; /* définit la valeur  sur l'ensemble des éléments-fils directs*/
+}
+
+
+
+div.title-box {
+    color:black ;
+    background-color: white;
+    position: absolute;
+    z-index: 999;/*spécifie le niveau de pile de la boîte dans le contexte d'empilement actuel et si la boîte établit un contexte d'empilement local*/
+    padding: 50px;/*définit des valeurs pour l'épaisseur de la zone de remplissage*/
+    top: 180px;/* Spécifie dans quelle mesure le bord de la marge supérieure d'une boîte en position absolue est décalée sous le bord supérieur du « bloc contenant » de la boîte*/
+    box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, .2); /*Attache une ou plusieurs ombres portées à la boîte. La propriété est une liste d'ombres séparées par des virgules, chacune spécifiée par 2 à 4 valeurs de longueur*/
+}
+
+header h1{
+    font-size: 80px; /*change la taille du texte*/
+    text-align: center;
+}
+
+header p {
+    font-size: 25px;
+    text-align: center;
+}
+
+header h1, header p, li {
+    font-family: 'Kenia', cursive; /*Spécifie une liste prioritaire de noms de famille de polices */
+}
+
+/* slider */
+
+.slider {
+    overflow: hidden; /*cache le débordement*/
+}
+
+.slides {
+    display: flex; /*change le type d'affichage en ligne*/
+    align-items: center; /* définit la valeur  sur l'ensemble des éléments-fils directs*/
+    flex-direction: row;/*l'ordre des images car on est dans le div.slide*/
+    width: calc(500px * 4); /*Cela spécifie la largeur de la zone de contenu, de la zone de remplissage, de la zone de bordure */
+    height: 720px;/*hauteur de l'image*/
+    animation: glisse 15s infinite ease;
+}
+
+.slide {
+    opacity: 0.5; /* la transparence */
+}
+/*Permet de mettre un niveau d'animation*/
+@keyframes glisse{ 
+/*Les differente étapes de l'animation */
+    0% {
+        transform: translateX(0); /*permet de dire à quel endroit de notre slider on veut regarder plus précisément cela indique ici que à 0% de l'image on est à 0 d'ou le translateX(0)*/
+    }
+
+    10% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-500px);
+    }
+
+    66% {
+        transform: translateX(-500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+/* navigation  */
+
+.section-menu {
+    justify-content: center;/* indique la façon dont l'espace doit être réparti entre et autour des éléments selon l'axe principal d'un conteneur flexible*/
+    transform: translateY(-130px); /*modifie l'espace de coordonnées utilisé pour la mise en forme visuelle*/
+    display: flex; /*détermine le type de boîte ou de boîtes générées pour un élément.*/
+    flex-direction: row; /*Spécifie comment les éléments flexibles sont placés dans le conteneur flexible*/
+}
+
+
+nav.menu {
+    width: calc(500px * 4); /*Cela spécifie la largeur de la zone de contenu, de la zone de remplissage, de la zone de bordure */
+}
+
+nav.menu ul {
+    display: flex; /*change le type d'affichage en ligne*/
+    flex-direction: row; /*Spécifie comment les éléments flexibles sont placés dans le conteneur flexible*/
+}
+
+nav.menu ul li {
+    list-style-type: none; /*enleve les puces sur le menu de navigation aussi Utilisé pour construire le contenu par défaut du marqueur d'un élément de liste*/
+    display: flex; /*mettre la liste concernant li en ligne*/  /*détermine le type de boîte ou de boîtes générées pour un élément.*/
+    align-items: center; /* définit la valeur  sur l'ensemble des éléments-fils directs*/
+    justify-content: center;/* indique la façon dont l'espace doit être réparti entre et autour des éléments selon l'axe principal d'un conteneur flexible*/
+    transition: 0.3s all; /*permet de contrôler la vitesse d'animation*/
+}
+
+nav.menu ul li:hover {
+    transform: scale(0.90);/*modifie l'espace de coordonnées utilisé pour la mise en forme visuelle*/
+    transition: 0.3s all;/*permet de contrôler la vitesse d'animation*/
+}
+
+nav.menu ul li a {
+    color: white; /*
+    Définit la couleur du texte d'un élément*/
+    text-decoration: none;/*Décorations appliquées à la police utilisée pour le texte d'un élément.*/
+    font-size: 50px;/*définit la taille de fonte utilisée pour le texte*/
+}
+
+.nav-item {
+    flex: 1;/*permet de spécifier un facteur d'agrandissement ou de réduction de la taille d'un élément flexible Css en fonction de l'espace disponible dans leur conteneur */
+    height: 300px;/* Spécifie la hauteur de la zone de contenu, de la zone de remplissage ou de la zone de bordure (en fonction de la « taille de la boîte ») de certaines boîtes.*/
+}
+
+.Films  {
+    background: url(../images/b75f2e67ff567ca7d7fa47c31c1d2db2.jpg) 100%;
+    background-repeat: no-repeat;/*Spécifie la façon dont les images d'arrière-plan sont mises en mosaïque une fois qu'elles ont été dimensionnées et positionnées.*/
+    background-size: cover; /*Spécifie la taille des images d'arrière-plan*/ 
+}
+
+.Series{
+    background: url(../images/casa2.jpg) 100%;
+    background-repeat: no-repeat;/*Spécifie la façon dont les images d'arrière-plan sont mises en mosaïque une fois qu'elles ont été dimensionnées et positionnées.*/
+    background-size: cover; /*Spécifie la taille des images d'arrière-plan*/
+}
+
+.Animes {
+    background: url(../images/Reiner.png) 100%;
+    background-repeat: no-repeat;/*Spécifie la façon dont les images d'arrière-plan sont mises en mosaïque une fois qu'elles ont été dimensionnées et positionnées.*/
+    background-size: cover;/*Spécifie la taille des images d'arrière-plan*/
+}
+
+.Documentaire {
+    background: url(../images/gims2.jpg) 100%;
+    background-repeat: no-repeat;/*Spécifie la façon dont les images d'arrière-plan sont mises en mosaïque une fois qu'elles ont été dimensionnées et positionnées.*/
+    background-size: cover;/*Spécifie la taille des images d'arrière-plan*/
+}
+
+/* sections plats */
+
+.item {
+    background-color: white;
+    margin: 20px;/*définit des valeurs pour l'épaisseur de la zone de marge*/
+    display: flex;/*détermine le type de boîte ou de boîtes générées pour un élément.*/
+    cursor: pointer;/*Permet de contrôler l'apparence du curseur dans un élément */
+    transition: 0.3s all; /*combine quatre des propriétés de transition en une seule propriété.*/ 
+    width: 50%; /*Spécifie la largeur de la zone de contenu, de la zone de remplissage ou de la zone de bordure (en fonction de la « dimension de la boîte ») de certaines boîtes.*/
+}
+
+.item:hover {
+    transform: scale(1.1); /*modifie l'espace de coordonnées utilisé pour la mise en forme visuelle*/
+    transition: 0.3s all; /*combine quatre des propriétés de transition en une seule propriété.*/
+}
+
+.item:hover {
+    transition: 0.3s all; /*combine quatre des propriétés de transition en une seule propriété.*/
+    box-shadow: -8px 8px 2px 1px rgba(0, 0, 0, .1); /*Attache une ou plusieurs ombres portées à la boîte. La propriété est une liste d'ombres séparées par des virgules, chacune spécifiée par 2 à 4 valeurs de longueur*/
+}
+
+.item-infos {
+    padding: 20px;/*définit des valeurs pour l'épaisseur de la zone de remplissage*/
+    line-height: 40px;/*Détermine la dimension de progression de bloc de la zone de contenu de texte d'une zone en ligne*/
+}
+
+section {
+    padding: 100px;/*définit des valeurs pour l'épaisseur de la zone de remplissage*/
+    font-family: 'Martel', serif; /*Spécifie une liste prioritaire de noms de famille de polices */
+}
+
+.item-infos h3 {
+    font-size: 25px; /*Indique la hauteur souhaitée des glyphes de la police. */
+}
+.item-infos hr {
+    margin: 10px 0 10px 0; /*définit des valeurs pour l'épaisseur de la zone de marge*/
+    opacity: 0.5;/* la transparence */
+}
+
+p.prix {
+    font-weight: bold; /*Spécifie le poids des glyphes dans la police, leur degré de noirceur ou l'épaisseur du trait.*/
+    font-size: 22px;/*Indique la hauteur souhaitée des glyphes de la police. *//**/
+}
+
+section img {
+    width: 300px;/*Cela spécifie la largeur de la zone de contenu, de la zone de remplissage, de la zone de bordure */
+}
+
+/* menu bloqué à droite */
+
+.sticky {
+    position: fixed;
+    width: 500px;/*Cela spécifie la largeur de la zone de contenu, de la zone de remplissage, de la zone de bordure */
+    top: 30vh;/*Spécifie dans quelle mesure le bord de la marge supérieure d'une boîte en position absolue est décalée sous le bord supérieur du « bloc contenant » de la boîte*/
+    right: 50px;/*Spécifie dans quelle mesure le bord de la marge droite d'une boîte en position absolue est décalée par rapport à la gauche du bord droit du « bloc contenant » de la boîte.*/
+    transform: translateY(10px); /*modifie l'espace de coordonnées utilisé pour la mise en forme visuelle*/
+    transition: 0.6s all;/*combine quatre des propriétés de transition en une seule propriété.*/ 
+}
+
+.sticky + #main {
+    padding-top: 200px;/*espace entre son contenu et sa bordure.*/
+}
+
+.sticky nav.menu ul {
+    flex-direction: column;/*Spécifie comment les éléments flexibles sont placés dans le conteneur flexible*/
+}
+
+.sticky, nav.menu ul li {
+    margin: 2px;/*définit des valeurs pour l'épaisseur de la zone de marge*/
+}
+
+/* pied de page */
+
+footer p {
+    font-size: 22px; /*Indique la hauteur souhaitée des glyphes de la police. */
+    text-align: center;
+    color: white;
+    padding: 20px; /*définit des valeurs pour l'épaisseur de la zone de remplissage*/
+    font-family: 'Martel', serif; /*Spécifie une liste prioritaire de noms de famille de polices */
+}

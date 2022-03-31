@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WAH</title>
+        <!--pour pas avoir de probleme d'encodage et meta est une balise clandestine-->
+        <meta charset="utf-8">
+        <!--balise pour importer la police d'ecriture ici il s'agit de Kenia-->
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kenia&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Martel:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- balise pour le haut de page -->
+        <header>
+<!--permet d'ajouter des choses à l'interieur div-->
+            <div class="title-box">
+                <!-- titre pour ma page -->
+                <h1>WAH</h1>
+                <!-- titre pour ma page -->
+                <p>Vos Films et Series reuni en un meme endroit</p>
+            </div>
+
+            <!-- slider d'images -->
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="images/Netflix.jpg"></div> <!-- image 1 sur le slide au singulier-->
+                    <div class="slide"><img src="images/Amazon.jpg"></div> <!-- image 2 sur le slide au singulier-->
+                    <div class="slide"><img src="images/s.jpg"></div> <!-- image 3 sur le slide au singulier-->
+                    <div class="slide"><img src="images/Adn.jpg"></div> <!-- image 4 sur le slide au singulier-->
+
+                </div>
+            </div>
+
+        </header>
+
+        <div id="sticky-header" class="section-menu">
+            <!-- navigation -->
+            <nav class="menu">
+                <ul>
+                    <!--nav item est la pour augmenter la taille de cette liste--><!--a href permet de mettre un lien sur le mots correspondant-->
+                    <li class="nav-item Films"><a href="#Films">Films</a></li>
+                    <li class="nav-item Series"><a href="#Series">Series</a></li>
+                    <li class="nav-item Animes"><a href="#Animes">Animes</a></li>
+                    <li class="nav-item Documentaire"><a href="#Documentaire">Documentaire</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main id="main">
+
+            <!-- section Films -->
+            <section id="Films" class="Films"><!-- L'élément section représente une section générique d'un document ou d'une application. Une section, dans ce contexte, est un regroupement thématique de contenu. -->
+
+                <div class="item"> <!--L'élément div n'a aucune signification particulière. Il représente ses enfants. Il peut être utilisé avec les attributs class, lang et title pour baliser la sémantique commune à un groupe d'éléments consécutifs.--><!--Class est Une liste séparée par des espaces des classes de l'élément. Les classes permettent à CSS et JavaScript de sélectionner et d'accéder à des éléments spécifiques via les sélecteurs de classe ou des fonctions comme la méthode-->
+                    <img src="images/7e5c2e0c3r861.jpg"><!--Un élément img représente une image. --> <!--src est L'URL de l'image -->
+                    <div class="item-infos">
+                        <h3>Tendance : Spiderman No way Home</h3>
+                        <hr><!-- L'élément hr représente une rupture thématique au niveau du paragraphe, par ex. un changement de scène dans une histoire ou une transition vers un autre sujet dans une section d'un ouvrage de référence. -->
+                        <p>Pour la première fois dans son histoire cinématographique, Spider-Man, le héros sympa du quartier est démasqué et ne peut désormais plus séparer sa vie normale de ses lourdes responsabilités de super-héros. Quand il demande de l'aide à Doctor Strange, les enjeux deviennent encore plus dangereux, le forçant à découvrir ce qu'être Spider-Man signifie véritablement.
+                        </p>
+                        <p class="prix">Acheter à 16.99€ ou Louer à 9.99€</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/Spiderman2.jpg">
+                    <div class="item-infos">
+                        <h3>Tendance : Spiderman Far From Home</h3>
+                        <hr>
+                        <p>L'araignée sympa du quartier décide de rejoindre ses meilleurs amis Ned, MJ, et le reste de la bande pour des vacances en Europe. Cependant, le projet de Peter de laisser son costume de super-héros derrière lui pendant quelques semaines est rapidement compromis quand il accepte à contrecoeur d'aider Nick Fury à découvrir le mystère de plusieurs attaques de créatures, qui ravagent le continent !</p>
+                        <p class="prix">Acheter à 16.99€ ou Louer à 9.99€</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/Spiderman3.jpg">
+                    <div class="item-infos">
+                        <h3>Spiderman Homecoming</h3>
+                        <hr>
+                        <p>Après ses spectaculaires débuts avec les Avengers, le jeune Peter Parker découvre peu à peu sa nouvelle identité, celle de Spider-Man, le superhéros lanceur de toile. Galvanisé par ses expériences précédentes, Peter rentre chez lui auprès de sa tante May, sous l'oeil attentif de son nouveau mentor, Tony Stark. L'apparition d'un nouvel ennemi, le Vautour, va mettre en danger tout ce qui compte pour lui.
+                        </p>
+                        <p class="prix">Acheter à 16.99€ ou Louer à 9.99€</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- section Series -->
+            <section id="Series" class="Series">
+
+                <div class="item">
+                    <img src="images/Walking.jpg">
+                    <div class="item-infos">
+                        <h3></h3>
+                        <hr>
+                        <p>Adjoint du shérif du comté de Kings Il se réveille d'un coma de plusieurs semaines pour découvrir que la population a été ravagée par une épidémie inconnue qui transforme les êtres humains en morts-vivants, appelés « rôdeurs ». Après avoir retrouvé sa famille, il devient très vite le chef d'un groupe de rescapés d'Atlanta. Ceux-ci sont amenés à devoir survivre dans un monde post-apocalyptique, affrontant des rôdeurs et d'autres groupes de survivants, pour certains plus dangereux encore que les rôdeurs eux-mêmes. Ensemble, ils doivent faire face tant bien que mal à un monde devenu méconnaissable, durant leur périple à travers le sud profond des États-Unis.</p>
+                        <p class="prix">Acheter à 16.99€ ou Louer à 9.99€</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/casa.jpg">
+                    <div class="item-infos">
+                        <h3>La Casa de Papel</h3>
+                        <hr>
+                        <p>Un homme mystérieux, surnommé le Professeur, planifie le meilleur braquage jamais organisé. Pour exécuter son plan, il recrute les meilleurs malfaiteurs du pays qui n'ont rien à perdre : Tokyo, Nairobi, Río, Moscou, Berlin, Denver, Helsinki et Oslo.
+
+                            Le but est d'infiltrer la Fabrique nationale de la monnaie et du timbre afin d'imprimer 2,4 milliards d'euros en billets intraçables, en moins de onze jours et sans verser une goutte de sang. Pourtant, le groupe sera responsable de 67 otages dont Alison Parker, la fille de l'ambassadeur du Royaume-Uni.</p>
+                        <p class="prix">Acheter à 16.99€ ou Louer à 9.99€</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/Elite.jpg">
+                    <div class="item-infos">
+                        <h3>Élite</h3>
+                        <hr>
+                        <p>Las Encinas est l’école la plus compétitive et huppée d’Espagne accueillant les enfants de l’élite. C’est également dans cette école que trois enfants de la classe ouvrière sont admis lorsque leur école est détruite et que les étudiants sont alors répartis dans plusieurs établissements. Ils pensaient être chanceux… mais peut-être ne le sont-ils pas tant que cela ? La confrontation entre ceux qui ont tout et ceux qui n’ont rien est explosive, et aboutira à un meurtre. Qui est vraiment derrière ce crime ? Est-ce l’un des nouveaux arrivants ? Ou se cache-t-il quelque chose de plus sombre ?</p>
+                        <p class="prix">Acheter à 16.99€ ou Louer à 9.99€</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- section Animes-->
+            <section id="Animes" class="Animes">
+
+                <div class="item">
+                    <img src="images/Onepiece.jpg">
+                    <div class="item-infos">
+                        <h3>One Piece</h3>
+                        <hr>
+                        <p>Monkey D. Luffy rêve de retrouver ce trésor légendaire et de devenir le nouveau "Roi des Pirates". Après avoir mangé un fruit du démon, il possède un pouvoir lui permettant de réaliser son rêve. Il lui faut maintenant trouver un équipage pour partir à l'aventure !</p>
+                        <p class="prix">Acheter à 16.99€ ou Louer à 9.99€</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/Naruto.jpg">
+                    <div class="item-infos">
+                        <h3>Naruto Shippuden</h3>
+                        <hr>
+                        <p>Naruto est de retour !! Après deux ans et demi d'entraînement avec Jiraya, il retrouve ses camarades de l'Académie des ninja ainsi que ses professeurs de Konoha. Tous ont évolué, y compris les ninjas du village de Suna. Seul Kakashi, semble être resté fidèle à lui-même ! Hélas, les retrouvailles sont de courte durée. Gaara, devenu depuis peu Kazekage de son village, est menacé. Tout porte à croire que l'Akatsuki soit à l'origine de l'attaque.
+                        </p>
+                        <p class="prix">Acheter à 16.99€ ou Louer à 9.99€</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/DragonBall.jpg">
+                    <div class="item-infos">
+                        <h3>Dragon Ball</h3>
+                        <hr>
+                        <p>La Terre est en paix après le Tournoi du Pouvoir mais Goku continue à s'entraîner, persuadé qu'il y a des forces encore plus fortes dans l'univers. En effet, Goku et Vegeta font face à un nouvel ennemi, le Super Saïyen Légendaire Broly, dans un combat explosif pour sauver notre planète.
+                        </p>
+                        <p class="prix">Acheter à 16.99€ ou Louer à 9.99€</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- section Documentaire -->
+            <section id="Documentaire" class="Documentaire">
+
+                <div class="item">
+                    <img src="images/gims.jpg">
+                    <div class="item-infos">
+                        <h3>GIMS</h3>
+                        <hr>
+                        <p>Découvrez l'artiste et l'homme derrière les lunettes noires dans ce docu qui suit Gims en coulisses pendant les mois qui ont précédé son concert 2019 au Stade de France.</p>
+                        <p class="prix">Acheter à 16.99€ ou Louer à 9.99€</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/casa4.jpg">
+                    <div class="item-infos">
+                        <h3>La casa de papel : De Tokyo à Berlin</h3>
+                        <hr>
+                        <p>Les cinéastes et acteurs de "La casa de papel" auxquels nous devons notamment Tokyo et le Professeur racontent le parcours artistique et émotionnel qu'a été le tournage.</p>
+                        <p class="prix">Acheter à 16.99€ ou Louer à 9.99€</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/casa3.jpg">
+                    <div class="item-infos">
+                        <h3>La casa de papel : Le phénomène</h3>
+                        <hr>
+                        <p>Ce documentaire explique pourquoi et comment "La casa de papel" a soulevé une vague d'enthousiasme mondiale pour un groupe de voleurs et leur professeur.</p>
+                        <p class="prix">Acheter à 16.99€ ou Louer à 9.99€</p>
+                    </div>
+                </div>
+
+            </section>
+
+
+        </main>
+
+        <!-- pied de page -->
+        <footer>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.4934073560994!2d2.303895515801154!3d48.886933206650355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e23d46e4e23%3A0xe7c3262a28c0a05a!2sEDTA%20Sornas!5e0!3m2!1sfr!2sfr!4v1639869200377!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            <p>Wassim Halvyn Ahmed</p>
+        </footer>
+
+        <!-- charge le script javascript -->
+        <script src="js/Wah.js"></script>
+
+    </body>
+</html>
